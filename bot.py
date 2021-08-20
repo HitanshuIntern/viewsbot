@@ -13,15 +13,15 @@ def bot ():
     x1 = entry1.get()
     
     while True:
-        driver1 = webdriver.Chrome()
-        driver2= webdriver.Chrome()
-        driver3= webdriver.Chrome()
+        driver1 = webdriver.Chrome(executable_path="chromedriver")
+        driver2= webdriver.Chrome(executable_path="chromedriver")
+        driver3= webdriver.Chrome(executable_path="chromedriver")
         url = x1
         sleep(2)
         driver1.get(url)
         driver2.get(url)
         driver3.get(url)
-        sleep(600)
+        sleep(40)
 
         driver1.quit()
         driver2.quit()
