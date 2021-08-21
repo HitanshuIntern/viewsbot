@@ -1,6 +1,7 @@
 import tkinter as tk
 from selenium import webdriver
 from time import sleep
+import random
 root= tk.Tk()
 
 canvas1 = tk.Canvas(root, width = 400, height = 300)
@@ -21,7 +22,7 @@ def bot ():
         driver1.get(url)
         driver2.get(url)
         driver3.get(url)
-        sleep(40)
+        sleep(int(random.randrange(600, 900)))
 
         driver1.quit()
         driver2.quit()
